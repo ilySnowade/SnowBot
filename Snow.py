@@ -42,5 +42,5 @@ async def cat(ctx):
     await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
 
     
-bot.run('BOT_TOKEN')
+bot.run('NjA4MjA0MTU0OTEzMTYxMjI2.XUvKCQ.phvJoX628xS_6EsfKGGsvWFfrEw')
 
