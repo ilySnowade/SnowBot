@@ -1,0 +1,4 @@
+discord
+asynic.io
+Pymoe
+pip
