@@ -1,4 +1,4 @@
 discord.py
-async.io
+asynic.io
 Pymoe
 pip
