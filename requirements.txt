@@ -1,4 +1,2 @@
 discord.py
-asynic.io
-Pymoe
-pip
+
