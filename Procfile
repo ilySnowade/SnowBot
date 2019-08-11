@@ -1,1 +1,1 @@
-worker: python SnowBot.py
+worker: python Snow.py
