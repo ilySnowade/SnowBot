@@ -34,6 +34,7 @@ async def help(ctx):
     embed.add_field(name="/kick", value="Kicks members", inline=False)
     embed.add_field(name="/ban", value="Bans members", inline=False)
     embed.add_field(name="/cat", value="Sends cat gif meow", inline=False)
+    embed.add_field(name="/ping", value="Sends bot ping", inline=False)
     
     await ctx.send(embed=embed)
 
