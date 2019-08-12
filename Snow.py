@@ -6,12 +6,6 @@ import os
 
 client = discord.Client
 bot = commands.Bot(command_prefix='/')
-
-     async def on_message(self, message):
-        # Whenever a user other than bot says "hi"
-        if message.author != self.user:
-            if message.content == 'hi':
-                await message.channel.send('Hello')
         
 @bot.event
 async def on_ready():
