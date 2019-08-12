@@ -30,7 +30,9 @@ bot.remove_command('help')
 async def help(ctx):
     embed = discord.Embed(title="Help", description="List of commands:", color=0xeee657)
     embed.add_field(name="/info", value="Gives a little info about the bot", inline=False)
-    embed.add_field(name="/help", value="Gives helps command", inline=False)
+    embed.add_field(name="/greet", value="Greet", inline=False)
+    embed.add_field(name="/kick", value="Kicks members", inline=False)
+    
     await ctx.send(embed=embed)
 
 @bot.command()
