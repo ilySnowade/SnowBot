@@ -56,11 +56,11 @@ async def kick(ctx, member : discord.Member, *,reason=None):
 async def ban(ctx, member : discord.Member, *,reason=None):
     await member.ban(reason=reason)
     await ctx.message.delete()
+
 @bot.command()
 async def ping(ctx):
     await ctx.send('Pong!:ping_pong: , just joking my ping was {0}'.format(round(bot.latency, 1)))
  
 
-    
 bot.run(os.getenv('BOT_TOKEN'))
 
