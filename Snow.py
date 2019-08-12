@@ -6,7 +6,6 @@ import os
 
 client = discord.Client
 bot = commands.Bot(command_prefix='/')
-        
 @bot.event
 async def on_ready():
     print('Snow is gonna BLOW')
