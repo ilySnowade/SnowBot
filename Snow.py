@@ -51,17 +51,6 @@ async def cat(ctx):
 async def kick(ctx, member : discord.Member, *,reason=None):
     await member.kick(reason=reason)
     await ctx.message.delete()
-@commands.has_permissions(administrator=True)
-async def kick(ctx, member:discord.Member = None):
-    if not member:
-        await ctx.send("Please specify a member")
-        return
-    await member.kick()
-    await ctx.send(f"{member.mention} got kicked")
-@kick.error
-async def kick_error(ctx, error):
-    if isinstance(error, commands.CheckFailure):
-        await ctx.send("You are not allowed to kick people")
 
 @bot.command()
 async def ban(ctx, member : discord.Member, *,reason=None):
