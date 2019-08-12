@@ -36,7 +36,9 @@ async def help(ctx):
     embed.add_field(name="/cat", value="Sends cat gif meow", inline=False)
     embed.add_field(name="/ping", value="Sends bot ping", inline=False)
     
+    
     await ctx.send(embed=embed)
+    await ctx.message.delete()
 
 @bot.command()
 async def greet(ctx): 
