@@ -50,7 +50,7 @@ async def cat(ctx):
 @bot.command()
 async def kick(ctx, member : discord.Member, *,reason=None):
     await member.kick(reason=reason)
-    await ctx.message.delete()@
+    await ctx.message.delete()
 
 @bot.command()
 async def ban(ctx, member : discord.Member, *,reason=None):
