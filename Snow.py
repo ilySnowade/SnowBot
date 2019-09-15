@@ -8,7 +8,7 @@ client = discord.Client
 bot = commands.Bot(command_prefix='/')
 @bot.event
 async def on_ready():
-    print('Snow is gonna BLOW')
+    print('Snow is gonna BLOW I mean done loading.')
 @bot.command()
 async def info(ctx):
     embed = discord.Embed(title="My Info", description="Snow's Info", color=0xeee657)
@@ -19,7 +19,7 @@ async def info(ctx):
     # Shows the number of servers the bot is member of.
     embed.add_field(name="Server count", value=f"{len(bot.guilds)}")
 
-    # give users a link to invite thsi bot to their server
+    # give users a link to invite this bot to their server
     embed.add_field(name="Invite", value="(https://discordapp.com/api/oauth2/authorize?client_id=608204154913161226&permissions=0&scope=bot)")
     await ctx.send(embed=embed)
     
@@ -38,7 +38,6 @@ async def help(ctx):
     
     
     await ctx.send(embed=embed)
-    await ctx.message.delete()
 
 @bot.command()
 async def greet(ctx): 
@@ -46,7 +45,7 @@ async def greet(ctx):
 
 @bot.command()
 async def cat(ctx):
-    await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
+    await ctx.send("Meow :cat: https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
 @bot.command()
 async def kick(ctx, member : discord.Member, *,reason=None):
     await member.kick(reason=reason)
